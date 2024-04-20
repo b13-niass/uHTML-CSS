@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+div {
+  /* border: 1px solid #000; */
+}
+.container {
+  display: flex;
+  width: 30%;
+  height: 20vh;
+  padding: 2%;
+  flex-direction: column-reverse;
+  row-gap: 6%;
+  align-items: center;
+}
+
+.text1 {
+  display: none;
+  background-color: black;
+  color: white;
+  padding: 1% 5%;
+  border-radius: 10px;
+}
+
+.text2:hover + .text1 {
+  display: block;
+}
+.text2 {
+  cursor: pointer;
+}
